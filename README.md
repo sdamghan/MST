@@ -6,4 +6,4 @@ make
 ```
 
 NOTE:
-You can use make clean to remove all newly created objects
+You can use `make clean` to remove all newly created objects

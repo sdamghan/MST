@@ -3,9 +3,10 @@ _BIN = ./bin
 
 CC = g++
 CFLAG = -O0 -g -std=c++11 
-_OBJ = hw3
+_OBJ = MST
 
 all: main
+	if [! -f "$(_BIN)"] then mkdir $(_BIN) fi
 	$(CC) $(CFLAG) $(_BIN)/*.o -o $(_OBJ)
 
 main: mst graph
